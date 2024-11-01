@@ -1,3 +1,67 @@
+1. 下载并安装WezTerm
+
+[WezTerm - Wez&apos;s Terminal Emulator](https://wezfurlong.org/wezterm/)
+
+[下载 - Wez 的终端仿真器](https://wezfurlong.org/wezterm/installation.html)
+
+2. 配置
+
+    * windows：
+
+      引入我的配置文件：
+
+        1. `cd C:\Users\Xbss\.config`
+        2. `git clone https://github.com/Xiaobaishushu25/WezTermTheme.git`
+        3. 把`WezTermTheme`文件夹改名为`WezTerm`.
+        4. 注意，我的配置文件中设置了背景图片，需要根据图片位置修改（我在仓库中也上传了我用的背景图片）：
+
+            ```rust
+                 background = {
+                    {
+                        source = {
+                            File = "D:\\WezTerm\\img\\cb71e8f2232e4d93a16fd1aa9aae4c3f.jpg", -- 替换为你的图片路径
+                        },
+                        width = "100%",
+                        height = "100%",
+                        opacity = 0.95, -- 设置为 1.0 时不透明，0.0 时完全透明
+                    },
+                }
+            ```
+
+      如果你要手动创建配置文件：
+
+        * 如果是单个文件，直接在`C:/Users/ `username` /.config/`下新建一个`.wezterm.lua`。
+        * 如果是多个文件（比如还有配色配置），在`C:/Users/ `username` /.config/`新建一个`wezterm`文件夹，里面放`wezterm.lua`.
+
+          ```rust
+          C:\USERS
+          ├─Public
+          ├─QU（你的主目录）
+          │  ├─Documents
+          │  ├─Downloads
+          │  ├─Pictures
+          │  ├─.config
+          │  │  ├─your others
+          │  │  └─wezterm
+          │  │     └─.git
+          │  │     dracula.lua
+          │  │     readme.md
+          │  │     wezterm.lua
+          │  │        ...
+          ```
+
+
+    参考两个：[wezterm-dracula-theme: 这是一个我自己的wezterm配置文件](https://gitee.com/aquawius/wezterm-dracula-theme)
+
+      [wezterm-dracula-theme: 这是一个我自己的wezterm配置文件](https://gitee.com/aquawius/wezterm-dracula-theme)
+3. 快捷键：
+
+   鼠标滑动选中就默认直接复制了。
+
+   `Ctrl+U`：快速删除当前所有待输入命令
+
+   `Ctrl+N`:  新建一个Tab（我自己设置的命令）
+
 ## 这是一个我自己的[wezterm](https://wezfurlong.org/wezterm/)配置文件
 
 > 又一个基于[dracula](https://draculatheme.com/)配色方案的[wezterm](https://wezfurlong.org/wezterm/)配置文件，增加了一些有用的功能。
